@@ -22,11 +22,14 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.6.3"
+python-dotenv = "^0.20.0"
 
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.0.0"
 pytest-cov = "^3.0.0"
+python-dotenv = "^0.20.0"
+black = "^22.3"
 
 
 [build-system]

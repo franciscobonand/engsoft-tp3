@@ -27,7 +27,13 @@ jobs:
       - name: Install dependencies
         run: poetry install
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+      - name: Format check with black
+        run: |
+          source $VENV
+          make format-check
       - name: Test with pytest
+        env:
+          TT_BEARER: ${{ secrets.TT_BEARER }}
         run: |
           source $VENV
           pytest tests -v
