@@ -30,7 +30,7 @@ jobs:
       - name: Format check with black
         run: |
           source $VENV
-          make format-check
+          black --check .
       - name: Test with pytest
         env:
           TT_BEARER: ${{ secrets.TT_BEARER }}
