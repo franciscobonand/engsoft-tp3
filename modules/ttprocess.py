@@ -1,27 +1,27 @@
 from modules.api import create_tweets_request_url, create_user_request_url, send_request
 
 
-def get_hashtags(username):
+def get_hashtags(username, bearer_token):
     try:
         usr_url = create_user_request_url(username)
     except ValueError:
         return "Invalid username"
 
-    found, id, err = get_user_id(usr_url)
+    found, id, err = get_user_id(usr_url, bearer_token)
     if not found:
         return err
 
     tweets_url = create_tweets_request_url(id)
-    found, tweets, err = get_tweets(tweets_url)
+    found, tweets, err = get_tweets(tweets_url, bearer_token)
     if not found:
         return err
 
-    search_hashtags(tweets)
+    return search_hashtags(tweets)
 
 
-def get_user_id(url):
+def get_user_id(url, bearer_token):
     try:
-        response = send_request(url)
+        response = send_request(url, bearer_token)
         if "data" in response and "id" in response["data"]:
             return True, response["data"]["id"], ""
         return False, "", "User not found"
@@ -29,9 +29,9 @@ def get_user_id(url):
         return False, "", e
 
 
-def get_tweets(url):
+def get_tweets(url, bearer_token):
     try:
-        response = send_request(url)
+        response = send_request(url, bearer_token)
         if has_tweets(response):
             return True, response["data"], ""
         return False, "", "Tweets not found"
@@ -53,9 +53,10 @@ def search_hashtags(tweets):
         hashtags = extract_hashtags(tweet["text"])
         all_hashtags += hashtags
 
-    print("fuckness:", all_hashtags)
+    if len(all_hashtags) == 0:
+        print("No hashtags found")
     return all_hashtags
 
 
 def extract_hashtags(s):
-    return set(part[1:] for part in s.split() if part.startswith("#"))
+    return set(part[1:].replace(".", "") for part in s.split() if part.startswith("#"))
