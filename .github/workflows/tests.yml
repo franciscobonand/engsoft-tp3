@@ -31,8 +31,6 @@ jobs:
         run: |
           source $VENV
           black --check .
-      - name: Create env file
-        run: echo ${{ secrets.TT_BEARER }} > .env
       - name: Test with pytest
         env:
           TT_BEARER: ${{ secrets.TT_BEARER }}
