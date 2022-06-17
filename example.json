@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "id": "1537503380368723970",
+      "text": "⏱Data delivery, faster.\n\nToday, we reduced the latency for all v2 streaming endpoints by half, which includes the filtered and sampled stream endpoints."
+    },
+    {
+      "id": "1537450190155632640",
+      "text": "New Yorkers! Join @i_am_daniele &amp; @jessicagarson at the Twitter New York Office on Thursday, June 30 at 6pm. Let's connect and discuss what's new on the Developer Platform.🚀\n\nRSVP ➡️ https://t.co/I77AEs0ute https://t.co/lWvNycErWl"
+    },
+    {
+      "id": "1535305794207498241",
+      "text": "When a client tasked @RedCloudFS to raise awareness about new patent-pending technology, they turned to @AudienseCo to build, segment, and target new audiences based on Twitter data. 📊🚀\n\nRead more ⬇️\nhttps://t.co/DbX3Exqn5i"
+    },
+    {
+      "id": "1534251698050326528",
+      "text": "Thank you for sharing this issue and for continuing to help us make the platform better."
+    },
+    {
+      "id": "1534251632640217088",
+      "text": "We plan to deliver up to 3,200 Tweets created in the last 7 days, which we expect to solve for most use cases. We’ll also continue to deliver the most recent 800 Tweets regardless of creation date. We intend for this to be available soon and will share updates."
+    },
+    {
+      "id": "1534251573840183296",
+      "text": "Thank you to our dev community for reporting that the reverse chronological timeline v2 endpoint is only returning the most recent 800 Tweets rather than 3,200 Tweets, as we’d documented. We’re working hard on a solution and we’re sorry for this oversight. More in thread 👇"
+    },
+    {
+      "id": "1529559344114569216",
+      "text": "Jerry Yang, one of @taaforg’s founding board members, joined us to talk about his life experience that led him to start TAAF and create the Decoding Hate project in this premiere article of the Global Scope series. Read the interview here. #IAmATwitterDev\nhttps://t.co/6XjDE6RkOH https://t.co/xT5LjUuRxJ"
+    },
+    {
+      "id": "1529559333788618752",
+      "text": "Using the Twitter API v2 search Tweets and Tweets lookup endpoints, the team turned thousands of Tweets into insightful stories. Learn more about the technical aspects of Decoding Hate and the impact it's had.\\xa0\nhttps://t.co/EHp3AnNZ7N https://t.co/dvcr561Q1X"
+    },
+    {
+      "id": "1529559321868378112",
+      "text": "Go Behind the Code with @taaforg to see how and why they used the Twitter Dev Platform to access data, track online bias, and raise awareness to help stop hate crimes in the #AAPI community. #BuildWhatsNext\nWatch the video 🎥\nhttps://t.co/VCPgVZid3N"
+    },
+    {
+      "id": "1529559318709669888",
+      "text": "In honor of Asian Americans and Pacific Islander (AAPI) Heritage month, we are spotlighting Decoding Hate, a project built with the Twitter Dev platform by @taaforg and @stopaapihate to track online bias and hate crimes in the #AAPI community.\n\nhttps://t.co/wkpz66lmxR https://t.co/B3aR19kuTu"
+    },
+    {
+      "id": "1528796298278670337",
+      "text": "📢  All developers can now Tweet videos, GIFs, images, alt text, and subtitles with the v1.1 media endpoints. \n\nWe’re adding this v1.1 functionality while we continue to work to deliver the v2 media endpoints.\\xa0⚙️\n\nLearn more 👇 \nhttps://t.co/7OUrCqqcSb"
+    },
+    {
+      "id": "1527691246449225728",
+      "text": "The time(line) has finally come! The reverse-chronological home timeline is now available on the Twitter API v2, allowing you to retrieve the most recent Tweets and Retweets from people you follow.\n\nCheck out the forum post for more information👇\nhttps://t.co/JaaguOjtvl"
+    },
+    {
+      "id": "1524796546306478083",
+      "text": "Today marks the launch of Devs in the Details, a technical video series made for developers by developers building with the Twitter API.\\xa0\\xa0🚀\n\nIn this premiere episode, @jessicagarson walks us through how she built @FactualCat #WelcomeToOurTechTalk\n⬇️\n\nhttps://t.co/nGa8JTQVBJ"
+    },
+    {
+      "id": "1522642324781633536",
+      "text": "If you’d like to apply, or would like to nominate someone else for the program, please feel free to fill out the following form:\n\nhttps://t.co/LUuWj24HLu"
+    },
+    {
+      "id": "1522642323535847424",
+      "text": "We’ve gone into more detail on each Insider in our forum post.\\xa0\n\nJoin us in congratulating the new additions! 🥳\n\nhttps://t.co/0r5maYEjPJ"
+    }
+  ],
+  "meta": {
+    "result_count": 15,
+    "newest_id": "1537503380368723970",
+    "oldest_id": "1522642323535847424",
+    "next_token": "7140dibdnow9c7btw421dyz6jism75z99gyxd8egarsc4"
+  }
+}
