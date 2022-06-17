@@ -54,9 +54,13 @@ def search_hashtags(tweets):
         all_hashtags += hashtags
 
     if len(all_hashtags) == 0:
-        print("No hashtags found")
+        return "No hashtags found"
     return all_hashtags
 
 
 def extract_hashtags(s):
-    return set(part[1:].replace(".", "") for part in s.split() if part.startswith("#"))
+    return set(
+        part[1:].replace(".", "").replace(",", "")
+        for part in s.split()
+        if part.startswith("#")
+    )
